@@ -333,4 +333,9 @@
 
 
 })();
-
+$(document).ready(function () {
+  // Automatically select the "all" filter when the page loads
+  $(".filters-content .single-portfolio").each(function () {
+    $(this).show(); // Ensure all items are shown initially
+  });
+});
