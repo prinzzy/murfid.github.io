@@ -333,9 +333,8 @@
 
 
 })();
-$(document).ready(function () {
-  // Automatically select the "all" filter when the page loads
-  $(".filters-content .single-portfolio").each(function () {
-    $(this).show(); // Ensure all items are shown initially
+  $(document).ready(function() {
+    // Set the "All" filter active on page load
+    $('.filters ul li').removeClass('active');
+    $('.filters ul li[data-filter="*"]').addClass('active');
   });
-});
