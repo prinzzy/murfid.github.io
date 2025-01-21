@@ -520,6 +520,7 @@ a:active {
   display: flex;
   margin-top: 50px;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -592,6 +593,8 @@ a:active {
 }
 
 .single-portfolio {
+  flex: 1 1 calc(33.333% - 20px); /* Ensures each item takes 1/3 of the row */
+  margin-bottom: 20px; /* Adds space between rows */
   border-radius: 5px;
 }
 
