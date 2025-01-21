@@ -394,54 +394,66 @@ a:active {
   font-size: 18px;
 }
 
+/* General Filters */
 .filters {
   text-align: center;
 }
+
 .filters ul {
   padding: 0;
   margin: 0 0 30px 0;
 }
+
 .filters ul li {
   display: inline-block;
   cursor: pointer;
   padding: 20px;
   transition: 0.3s all ease;
 }
+
 .filters ul li:hover {
   color: #bac964;
 }
+
 .filters ul li.active {
   color: #bac964;
 }
 
+/* Portfolio Styling */
 .single-portfolio {
   margin-bottom: 50px;
   display: block;
-  text-align: center; /* Ensure everything is centered */
+  text-align: center; /* Ensures content is centered */
 }
+
 .single-portfolio .relative {
   margin-bottom: 20px;
   position: relative;
-  max-width: 100%; /* Ensure images don't exceed their container */
+  max-width: 100%; /* Prevent images from exceeding container width */
 }
+
 .single-portfolio .relative .thumb {
   position: relative;
   overflow: hidden;
 }
+
 .single-portfolio .relative .thumb img {
-  width: 100%; /* Ensure images scale correctly */
+  width: 100%; /* Ensures images scale correctly */
   height: auto;
   display: block;
-  margin: 0 auto; /* Center the images horizontally */
+  margin: 0 auto; /* Centers images horizontally */
 }
+
 .single-portfolio .p-inner {
   text-align: center;
-  padding-top: 10px; /* Add space between image and title */
+  padding-top: 10px; /* Space between image and title */
 }
+
 .single-portfolio .p-inner h4 {
   font-size: 20px;
-  margin: 5px 0; /* Add spacing between the title and category */
+  margin: 5px 0; /* Adds spacing between title and category */
 }
+
 .single-portfolio .p-inner .cat {
   font-size: 12px;
   text-transform: uppercase;
@@ -449,7 +461,7 @@ a:active {
   margin: 0;
 }
 
-/*--------- Start Portfolio Area -------------*/
+/* Portfolio Area */
 .portfolio-area .primary-btn {
   color: #fff;
   background-color: #bac964;
@@ -463,6 +475,7 @@ a:active {
 
 .portfolio-area .filters ul {
   padding: 0;
+  margin: 0;
 }
 
 .portfolio-area .filters ul li {
@@ -476,9 +489,10 @@ a:active {
   font-size: 12px;
   font-weight: 500;
 }
+
 @media (max-width: 736px) {
   .portfolio-area .filters ul li {
-    padding: 6px 6px;
+    padding: 6px 6px; /* Adjust padding for small screens */
   }
 }
 
@@ -489,15 +503,11 @@ a:active {
   position: absolute;
   height: 2px;
   background: #333;
-  -webkit-transition: width 350ms ease-out;
-  -o-transition: width 350ms ease-out;
   transition: width 350ms ease-out;
 }
 
 .portfolio-area .filters ul li:hover:after {
   width: calc(100% - 60px);
-  -webkit-transition: width 350ms ease-out;
-  -o-transition: width 350ms ease-out;
   transition: width 350ms ease-out;
 }
 
@@ -505,6 +515,7 @@ a:active {
   color: #bac964;
 }
 
+/* Filter Content */
 .portfolio-area .filters-content {
   margin-top: 50px;
 }
@@ -512,16 +523,12 @@ a:active {
 .portfolio-area .filters-content .show {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: all 350ms;
-  -o-transition: all 350ms;
   transition: all 350ms;
 }
 
 .portfolio-area .filters-content .hide {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 350ms;
-  -o-transition: all 350ms;
   transition: all 350ms;
 }
 
@@ -553,24 +560,17 @@ a:active {
   display: block;
   width: 100%;
   height: 100%;
-  -webkit-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
   transition: 0.5s ease;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .middle {
-  -webkit-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -587,6 +587,7 @@ a:active {
 .single-portfolio {
   border-radius: 5px;
 }
+
 .single-portfolio:hover .thumb .overlay-bg {
   opacity: 0.85;
 }
@@ -594,17 +595,15 @@ a:active {
 .thumb .overlay-bg {
   opacity: 0;
   border-radius: 5px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
 @media screen and (prefers-reduced-motion: reduce) {
   .thumb .overlay-bg {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
+    transition: none; /* Disables transition for reduced motion */
   }
 }
+
 
 .resume-item {
   padding: 30px;
