@@ -805,3 +805,8 @@ a:active {
   letter-spacing: 0.2rem;
   color: rgba(255, 255, 255, 0.5) !important;
 }
+.filters-content .row.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between items */
+}
